@@ -18,6 +18,7 @@
 		E690B63B18B22CE500C36F0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690B61A18B22CE500C36F0A /* Cocoa.framework */; };
 		E690B64318B22CE500C36F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690B64118B22CE500C36F0A /* InfoPlist.strings */; };
 		E690B64518B22CE500C36F0A /* MovYaAssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B64418B22CE500C36F0A /* MovYaAssTests.m */; };
+		E690B65E18B2411C00C36F0A /* SKEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B65D18B2411C00C36F0A /* SKEventsController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		E690B64018B22CE500C36F0A /* MovYaAssTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovYaAssTests-Info.plist"; sourceTree = "<group>"; };
 		E690B64218B22CE500C36F0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E690B64418B22CE500C36F0A /* MovYaAssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovYaAssTests.m; sourceTree = "<group>"; };
+		E690B65C18B2411C00C36F0A /* SKEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKEventsController.h; sourceTree = "<group>"; };
+		E690B65D18B2411C00C36F0A /* SKEventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKEventsController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		E690B62018B22CE500C36F0A /* MovYaAss */ = {
 			isa = PBXGroup;
 			children = (
+				E690B65818B22DC300C36F0A /* Models */,
+				E690B65618B22D7500C36F0A /* Controllers */,
 				E690B62C18B22CE500C36F0A /* SKAppDelegate.h */,
 				E690B62D18B22CE500C36F0A /* SKAppDelegate.m */,
 				E690B62F18B22CE500C36F0A /* MainMenu.xib */,
@@ -152,6 +157,23 @@
 				E690B64118B22CE500C36F0A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E690B65618B22D7500C36F0A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E690B65C18B2411C00C36F0A /* SKEventsController.h */,
+				E690B65D18B2411C00C36F0A /* SKEventsController.m */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E690B65818B22DC300C36F0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E690B65E18B2411C00C36F0A /* SKEventsController.m in Sources */,
 				E690B62E18B22CE500C36F0A /* SKAppDelegate.m in Sources */,
 				E690B62718B22CE500C36F0A /* main.m in Sources */,
 			);
