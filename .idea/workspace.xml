@@ -2,11 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6fb9389-564c-4eed-a40c-db5eb9ee38de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SKEventsController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SKEventsController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/xcuserdata/dragos.xcuserdatad/xcschemes/MovYaAss.xcscheme" afterPath="$PROJECT_DIR$/MovYaAss.xcodeproj/xcuserdata/dragos.xcuserdatad/xcschemes/MovYaAss.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" afterPath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.pbxproj" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/MovYaAss.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.pbxproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/xcuserdata/dragos.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/xcuserdata/dragos.xcuserdatad/xcschemes/MovYaAss.xcscheme" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/xcuserdata/dragos.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/Base.lproj/MainMenu.xib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/Images.xcassets/AppIcon.appiconset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/MovYaAss-Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/MovYaAss-Prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/en.lproj/Credits.rtf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/en.lproj/InfoPlist.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAss/main.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAssTests/MovYaAssTests-Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAssTests/MovYaAssTests.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/MovYaAssTests/en.lproj/InfoPlist.strings" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SKEventsController.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SKEventsController.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/muvyass" afterPath="" />
     </list>
     <ignored path="MovYaAss.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +54,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SKEventsController.m" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SKAppDelegate.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="336">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SKAppDelegate.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="688">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SKEventsController.h" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SKEventsController.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.2733485" vertical-offset="0" max-vertical-offset="878">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SKEventsController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SKEventsController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="40" selection-start="298" selection-end="298" vertical-scroll-proportion="0.23690204" vertical-offset="0" max-vertical-offset="878">
+            <state line="14" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
               <folding />
             </state>
           </provider>
@@ -229,16 +281,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SKEventsController.h">
+    <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.23690204" vertical-offset="0" max-vertical-offset="878">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="878">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SKEventsController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="40" selection-start="298" selection-end="298" vertical-scroll-proportion="0.23690204" vertical-offset="0" max-vertical-offset="878">
+        <state line="14" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="352">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SKEventsController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.2733485" vertical-offset="0" max-vertical-offset="878">
           <folding />
         </state>
       </provider>
