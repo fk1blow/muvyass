@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E690B61B18B22CE500C36F0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690B61A18B22CE500C36F0A /* Cocoa.framework */; };
+		E690B62518B22CE500C36F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690B62318B22CE500C36F0A /* InfoPlist.strings */; };
+		E690B62718B22CE500C36F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B62618B22CE500C36F0A /* main.m */; };
+		E690B62B18B22CE500C36F0A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E690B62918B22CE500C36F0A /* Credits.rtf */; };
+		E690B62E18B22CE500C36F0A /* SKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B62D18B22CE500C36F0A /* SKAppDelegate.m */; };
+		E690B63118B22CE500C36F0A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E690B62F18B22CE500C36F0A /* MainMenu.xib */; };
+		E690B63318B22CE500C36F0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E690B63218B22CE500C36F0A /* Images.xcassets */; };
+		E690B63A18B22CE500C36F0A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690B63918B22CE500C36F0A /* XCTest.framework */; };
+		E690B63B18B22CE500C36F0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690B61A18B22CE500C36F0A /* Cocoa.framework */; };
+		E690B64318B22CE500C36F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690B64118B22CE500C36F0A /* InfoPlist.strings */; };
+		E690B64518B22CE500C36F0A /* MovYaAssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B64418B22CE500C36F0A /* MovYaAssTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E690B63C18B22CE500C36F0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E690B60F18B22CE500C36F0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E690B61618B22CE500C36F0A;
+			remoteInfo = MovYaAss;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E690B61718B22CE500C36F0A /* MovYaAss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovYaAss.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E690B61A18B22CE500C36F0A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E690B61D18B22CE500C36F0A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E690B61E18B22CE500C36F0A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E690B61F18B22CE500C36F0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E690B62218B22CE500C36F0A /* MovYaAss-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovYaAss-Info.plist"; sourceTree = "<group>"; };
+		E690B62418B22CE500C36F0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E690B62618B22CE500C36F0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E690B62818B22CE500C36F0A /* MovYaAss-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MovYaAss-Prefix.pch"; sourceTree = "<group>"; };
+		E690B62A18B22CE500C36F0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		E690B62C18B22CE500C36F0A /* SKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKAppDelegate.h; sourceTree = "<group>"; };
+		E690B62D18B22CE500C36F0A /* SKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKAppDelegate.m; sourceTree = "<group>"; };
+		E690B63018B22CE500C36F0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E690B63218B22CE500C36F0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E690B63818B22CE500C36F0A /* MovYaAssTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovYaAssTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E690B63918B22CE500C36F0A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E690B64018B22CE500C36F0A /* MovYaAssTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovYaAssTests-Info.plist"; sourceTree = "<group>"; };
+		E690B64218B22CE500C36F0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E690B64418B22CE500C36F0A /* MovYaAssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovYaAssTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E690B61418B22CE500C36F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690B61B18B22CE500C36F0A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E690B63518B22CE500C36F0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690B63B18B22CE500C36F0A /* Cocoa.framework in Frameworks */,
+				E690B63A18B22CE500C36F0A /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E690B60E18B22CE500C36F0A = {
+			isa = PBXGroup;
+			children = (
+				E690B62018B22CE500C36F0A /* MovYaAss */,
+				E690B63E18B22CE500C36F0A /* MovYaAssTests */,
+				E690B61918B22CE500C36F0A /* Frameworks */,
+				E690B61818B22CE500C36F0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E690B61818B22CE500C36F0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E690B61718B22CE500C36F0A /* MovYaAss.app */,
+				E690B63818B22CE500C36F0A /* MovYaAssTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E690B61918B22CE500C36F0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E690B61A18B22CE500C36F0A /* Cocoa.framework */,
+				E690B63918B22CE500C36F0A /* XCTest.framework */,
+				E690B61C18B22CE500C36F0A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E690B61C18B22CE500C36F0A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E690B61D18B22CE500C36F0A /* AppKit.framework */,
+				E690B61E18B22CE500C36F0A /* CoreData.framework */,
+				E690B61F18B22CE500C36F0A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E690B62018B22CE500C36F0A /* MovYaAss */ = {
+			isa = PBXGroup;
+			children = (
+				E690B62C18B22CE500C36F0A /* SKAppDelegate.h */,
+				E690B62D18B22CE500C36F0A /* SKAppDelegate.m */,
+				E690B62F18B22CE500C36F0A /* MainMenu.xib */,
+				E690B63218B22CE500C36F0A /* Images.xcassets */,
+				E690B62118B22CE500C36F0A /* Supporting Files */,
+			);
+			path = MovYaAss;
+			sourceTree = "<group>";
+		};
+		E690B62118B22CE500C36F0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E690B62218B22CE500C36F0A /* MovYaAss-Info.plist */,
+				E690B62318B22CE500C36F0A /* InfoPlist.strings */,
+				E690B62618B22CE500C36F0A /* main.m */,
+				E690B62818B22CE500C36F0A /* MovYaAss-Prefix.pch */,
+				E690B62918B22CE500C36F0A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E690B63E18B22CE500C36F0A /* MovYaAssTests */ = {
+			isa = PBXGroup;
+			children = (
+				E690B64418B22CE500C36F0A /* MovYaAssTests.m */,
+				E690B63F18B22CE500C36F0A /* Supporting Files */,
+			);
+			path = MovYaAssTests;
+			sourceTree = "<group>";
+		};
+		E690B63F18B22CE500C36F0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E690B64018B22CE500C36F0A /* MovYaAssTests-Info.plist */,
+				E690B64118B22CE500C36F0A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E690B61618B22CE500C36F0A /* MovYaAss */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E690B64818B22CE500C36F0A /* Build configuration list for PBXNativeTarget "MovYaAss" */;
+			buildPhases = (
+				E690B61318B22CE500C36F0A /* Sources */,
+				E690B61418B22CE500C36F0A /* Frameworks */,
+				E690B61518B22CE500C36F0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MovYaAss;
+			productName = MovYaAss;
+			productReference = E690B61718B22CE500C36F0A /* MovYaAss.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E690B63718B22CE500C36F0A /* MovYaAssTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E690B64B18B22CE500C36F0A /* Build configuration list for PBXNativeTarget "MovYaAssTests" */;
+			buildPhases = (
+				E690B63418B22CE500C36F0A /* Sources */,
+				E690B63518B22CE500C36F0A /* Frameworks */,
+				E690B63618B22CE500C36F0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E690B63D18B22CE500C36F0A /* PBXTargetDependency */,
+			);
+			name = MovYaAssTests;
+			productName = MovYaAssTests;
+			productReference = E690B63818B22CE500C36F0A /* MovYaAssTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E690B60F18B22CE500C36F0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dragos Tudorache";
+				TargetAttributes = {
+					E690B63718B22CE500C36F0A = {
+						TestTargetID = E690B61618B22CE500C36F0A;
+					};
+				};
+			};
+			buildConfigurationList = E690B61218B22CE500C36F0A /* Build configuration list for PBXProject "MovYaAss" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E690B60E18B22CE500C36F0A;
+			productRefGroup = E690B61818B22CE500C36F0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E690B61618B22CE500C36F0A /* MovYaAss */,
+				E690B63718B22CE500C36F0A /* MovYaAssTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E690B61518B22CE500C36F0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690B62518B22CE500C36F0A /* InfoPlist.strings in Resources */,
+				E690B63318B22CE500C36F0A /* Images.xcassets in Resources */,
+				E690B62B18B22CE500C36F0A /* Credits.rtf in Resources */,
+				E690B63118B22CE500C36F0A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E690B63618B22CE500C36F0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690B64318B22CE500C36F0A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E690B61318B22CE500C36F0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690B62E18B22CE500C36F0A /* SKAppDelegate.m in Sources */,
+				E690B62718B22CE500C36F0A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E690B63418B22CE500C36F0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E690B64518B22CE500C36F0A /* MovYaAssTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E690B63D18B22CE500C36F0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E690B61618B22CE500C36F0A /* MovYaAss */;
+			targetProxy = E690B63C18B22CE500C36F0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E690B62318B22CE500C36F0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E690B62418B22CE500C36F0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E690B62918B22CE500C36F0A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E690B62A18B22CE500C36F0A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		E690B62F18B22CE500C36F0A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E690B63018B22CE500C36F0A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		E690B64118B22CE500C36F0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E690B64218B22CE500C36F0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E690B64618B22CE500C36F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E690B64718B22CE500C36F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E690B64918B22CE500C36F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovYaAss/MovYaAss-Prefix.pch";
+				INFOPLIST_FILE = "MovYaAss/MovYaAss-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E690B64A18B22CE500C36F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovYaAss/MovYaAss-Prefix.pch";
+				INFOPLIST_FILE = "MovYaAss/MovYaAss-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E690B64C18B22CE500C36F0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MovYaAss.app/Contents/MacOS/MovYaAss";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovYaAss/MovYaAss-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MovYaAssTests/MovYaAssTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E690B64D18B22CE500C36F0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MovYaAss.app/Contents/MacOS/MovYaAss";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MovYaAss/MovYaAss-Prefix.pch";
+				INFOPLIST_FILE = "MovYaAssTests/MovYaAssTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E690B61218B22CE500C36F0A /* Build configuration list for PBXProject "MovYaAss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E690B64618B22CE500C36F0A /* Debug */,
+				E690B64718B22CE500C36F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E690B64818B22CE500C36F0A /* Build configuration list for PBXNativeTarget "MovYaAss" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E690B64918B22CE500C36F0A /* Debug */,
+				E690B64A18B22CE500C36F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E690B64B18B22CE500C36F0A /* Build configuration list for PBXNativeTarget "MovYaAssTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E690B64C18B22CE500C36F0A /* Debug */,
+				E690B64D18B22CE500C36F0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E690B60F18B22CE500C36F0A /* Project object */;
+}
