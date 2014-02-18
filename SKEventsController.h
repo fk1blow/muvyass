@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SKFocusedWindow.h"
 
 @interface SKEventsController : NSObject
 

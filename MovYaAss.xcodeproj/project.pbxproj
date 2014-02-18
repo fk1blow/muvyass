@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A7DA037DCEA788FE6032F25 /* SKTileMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DA7C02DFBC7A174CE1EDB /* SKTileMatrix.m */; };
+		7A7DA9D82F2A768FDC90AC07 /* SKTileMatrixController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DAE5EAFE44109C6F9317A /* SKTileMatrixController.m */; };
 		E690B61B18B22CE500C36F0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690B61A18B22CE500C36F0A /* Cocoa.framework */; };
 		E690B62518B22CE500C36F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690B62318B22CE500C36F0A /* InfoPlist.strings */; };
 		E690B62718B22CE500C36F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B62618B22CE500C36F0A /* main.m */; };
@@ -19,6 +21,7 @@
 		E690B64318B22CE500C36F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690B64118B22CE500C36F0A /* InfoPlist.strings */; };
 		E690B64518B22CE500C36F0A /* MovYaAssTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B64418B22CE500C36F0A /* MovYaAssTests.m */; };
 		E690B65E18B2411C00C36F0A /* SKEventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B65D18B2411C00C36F0A /* SKEventsController.m */; };
+		E6BCF24D18B2AFDB00B0D06D /* SKFocusedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BCF24C18B2AFDB00B0D06D /* SKFocusedWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A7DA12BCF55E10312685824 /* SKTileMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTileMatrix.h; sourceTree = "<group>"; };
+		7A7DA5C6BAF4474021C01EBB /* SKTileMatrixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTileMatrixController.h; sourceTree = "<group>"; };
+		7A7DA7C02DFBC7A174CE1EDB /* SKTileMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileMatrix.m; sourceTree = "<group>"; };
+		7A7DAE5EAFE44109C6F9317A /* SKTileMatrixController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileMatrixController.m; sourceTree = "<group>"; };
 		E690B61718B22CE500C36F0A /* MovYaAss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovYaAss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E690B61A18B22CE500C36F0A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E690B61D18B22CE500C36F0A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -53,6 +60,8 @@
 		E690B64418B22CE500C36F0A /* MovYaAssTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovYaAssTests.m; sourceTree = "<group>"; };
 		E690B65C18B2411C00C36F0A /* SKEventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKEventsController.h; sourceTree = "<group>"; };
 		E690B65D18B2411C00C36F0A /* SKEventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKEventsController.m; sourceTree = "<group>"; };
+		E6BCF24B18B2AFDB00B0D06D /* SKFocusedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKFocusedWindow.h; sourceTree = "<group>"; };
+		E6BCF24C18B2AFDB00B0D06D /* SKFocusedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKFocusedWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A7DA1A6EE777A87BD6E40B6 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				7A7DA7C02DFBC7A174CE1EDB /* SKTileMatrix.m */,
+				7A7DA12BCF55E10312685824 /* SKTileMatrix.h */,
+				7A7DAE5EAFE44109C6F9317A /* SKTileMatrixController.m */,
+				7A7DA5C6BAF4474021C01EBB /* SKTileMatrixController.h */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
+		7A7DABE0503941F506ED37F8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		E690B60E18B22CE500C36F0A = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +152,8 @@
 				E690B62F18B22CE500C36F0A /* MainMenu.xib */,
 				E690B63218B22CE500C36F0A /* Images.xcassets */,
 				E690B62118B22CE500C36F0A /* Supporting Files */,
+				7A7DABE0503941F506ED37F8 /* Services */,
+				7A7DA1A6EE777A87BD6E40B6 /* Tiles */,
 			);
 			path = MovYaAss;
 			sourceTree = "<group>";
@@ -164,6 +193,8 @@
 			children = (
 				E690B65C18B2411C00C36F0A /* SKEventsController.h */,
 				E690B65D18B2411C00C36F0A /* SKEventsController.m */,
+				E6BCF24B18B2AFDB00B0D06D /* SKFocusedWindow.h */,
+				E6BCF24C18B2AFDB00B0D06D /* SKFocusedWindow.m */,
 			);
 			name = Controllers;
 			path = ..;
@@ -276,8 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E690B65E18B2411C00C36F0A /* SKEventsController.m in Sources */,
+				E6BCF24D18B2AFDB00B0D06D /* SKFocusedWindow.m in Sources */,
 				E690B62E18B22CE500C36F0A /* SKAppDelegate.m in Sources */,
 				E690B62718B22CE500C36F0A /* main.m in Sources */,
+				7A7DA037DCEA788FE6032F25 /* SKTileMatrix.m in Sources */,
+				7A7DA9D82F2A768FDC90AC07 /* SKTileMatrixController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +522,7 @@
 				E690B64A18B22CE500C36F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E690B64B18B22CE500C36F0A /* Build configuration list for PBXNativeTarget "MovYaAssTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +531,7 @@
 				E690B64D18B22CE500C36F0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

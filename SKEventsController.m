@@ -10,8 +10,16 @@
 
 @implementation SKEventsController
 
+-(id)init {
+    self = [super init];
+    if (self) {
+        //
+    }
+    return self;
+}
+
 -(void)handleEvent:(NSEvent *) event {
-	NSLog(@"received event: %@", event);
+	NSLog(@"received event: %d", [event keyCode]);
 }
 
 @end

@@ -8,6 +8,8 @@
 
 #import "SKAppDelegate.h"
 #import "SKEventsController.h"
+#import "SKTileMatrix.h"
+#import "SKTileMatrixController.h"
 
 @implementation SKAppDelegate
 {
@@ -16,12 +18,32 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-	// Initializing events controller
-	SKEventsController* eventsController = [[SKEventsController alloc] init];
-	
-	NSEvent * (^monitorHandler)(NSEvent *);
+    // initialize tile matrix
+    int matrixConf[2] = {2,2};
+    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:matrixConf
+                                                        andWrapperFrame:[[NSScreen mainScreen] visibleFrame]];
+
+    // initialize tiles controller
+    SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] initWithTileMatrix:tileMatrix];
+
+    // @TODO refactor object by rename or just delete it
+    // Initializing events controller
+	SKEventsController* eventsCtrl = [[SKEventsController alloc] init];
+
+
+
+
+
+
+
+    SKFocusedWindow * focusedWindowController = [[SKFocusedWindow alloc] init];
+    [focusedWindowController setCurrentFocusedWindow:self.window];
+
+    NSEvent * (^monitorHandler)(NSEvent *);
     monitorHandler = ^NSEvent * (NSEvent * theEvent){
-        [eventsController handleEvent:theEvent];
+        [eventsCtrl handleEvent:theEvent];
+        [focusedWindowController moveWindowTo:CGRectMake(0, 0, 300, 150)];
+
 		// Return the event, a new event, or, to stop
         // the event from being dispatched, nil
         return theEvent;
@@ -31,8 +53,11 @@
     // of so that it can be "removed" when we're done
     eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask | NSFlagsChangedMask
                                                          handler:monitorHandler];
-
-
 }
+
+
+// First, you SHOULD build the repositioning system, the grid and the key manipulation logic and
+// then think about the accessibility api, the window, observers and shit like that !!!
+
 
 @end
