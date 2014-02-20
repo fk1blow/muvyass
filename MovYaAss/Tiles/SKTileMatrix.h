@@ -7,13 +7,13 @@
 
 
 @interface SKTileMatrix : NSObject {
-    // currently used tile matrix array as rows x columns
-    int matrixConfiguration[2];
+    CGRect _wrapperFrame;
 }
 
 // the invisible frame for the tiles wrapper rect
 @property (assign) CGRect wrapperFrame;
 
-- (id) initWithTileMatrix:(int *)matrix andWrapperFrame:(CGRect)frame;
+// provide a matrix for the tile and a frame for the wrapper
+- (id) initWithTileMatrix:(int *)matrix andVisibleFrame:(CGRect)frame;
 
 @end
