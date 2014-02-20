@@ -10,6 +10,7 @@
 #import "SKEventsController.h"
 #import "SKTileMatrix.h"
 #import "SKTileMatrixController.h"
+#import "SKInputController.h"
 
 @implementation SKAppDelegate
 {
@@ -18,23 +19,27 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // initialize tile matrix
-    int matrixConf[2] = {2,2};
-    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:matrixConf
-                                                        andWrapperFrame:[[NSScreen mainScreen] visibleFrame]];
+    /** Initialize matrix and controller  */
 
+    // initialize tile matrix
+    int matrixConfiguration[2] = {2,2};
+    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:matrixConfiguration
+                                                        andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];
     // initialize tiles controller
     SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] initWithTileMatrix:tileMatrix];
+
+    /** Initialize events controller */
 
     // @TODO refactor object by rename or just delete it
     // Initializing events controller
 	SKEventsController* eventsCtrl = [[SKEventsController alloc] init];
 
+    /** Initialize input controller */
 
+    // should manage the user keyboard input
+    SKInputController *inputController = [[SKInputController alloc] init];
 
-
-
-
+    /** some other stuff */
 
     SKFocusedWindow * focusedWindowController = [[SKFocusedWindow alloc] init];
     [focusedWindowController setCurrentFocusedWindow:self.window];

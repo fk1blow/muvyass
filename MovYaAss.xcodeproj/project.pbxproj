@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A7DA037DCEA788FE6032F25 /* SKTileMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DA7C02DFBC7A174CE1EDB /* SKTileMatrix.m */; };
+		7A7DA5598C9848A40BABE4CD /* SKInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DABFC4B6C3CA2DCE57A53 /* SKInputController.m */; };
 		7A7DA9D82F2A768FDC90AC07 /* SKTileMatrixController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DAE5EAFE44109C6F9317A /* SKTileMatrixController.m */; };
 		E690B61B18B22CE500C36F0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690B61A18B22CE500C36F0A /* Cocoa.framework */; };
 		E690B62518B22CE500C36F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690B62318B22CE500C36F0A /* InfoPlist.strings */; };
@@ -36,8 +37,10 @@
 
 /* Begin PBXFileReference section */
 		7A7DA12BCF55E10312685824 /* SKTileMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTileMatrix.h; sourceTree = "<group>"; };
+		7A7DA241B81F86A31075D034 /* SKInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKInputController.h; sourceTree = "<group>"; };
 		7A7DA5C6BAF4474021C01EBB /* SKTileMatrixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTileMatrixController.h; sourceTree = "<group>"; };
 		7A7DA7C02DFBC7A174CE1EDB /* SKTileMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileMatrix.m; sourceTree = "<group>"; };
+		7A7DABFC4B6C3CA2DCE57A53 /* SKInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKInputController.m; sourceTree = "<group>"; };
 		7A7DAE5EAFE44109C6F9317A /* SKTileMatrixController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileMatrixController.m; sourceTree = "<group>"; };
 		E690B61718B22CE500C36F0A /* MovYaAss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovYaAss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E690B61A18B22CE500C36F0A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -103,6 +106,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		7A7DAD7EEBF4638F1F6B6E35 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				7A7DABFC4B6C3CA2DCE57A53 /* SKInputController.m */,
+				7A7DA241B81F86A31075D034 /* SKInputController.h */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 		E690B60E18B22CE500C36F0A = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +166,7 @@
 				E690B62118B22CE500C36F0A /* Supporting Files */,
 				7A7DABE0503941F506ED37F8 /* Services */,
 				7A7DA1A6EE777A87BD6E40B6 /* Tiles */,
+				7A7DAD7EEBF4638F1F6B6E35 /* Keys */,
 			);
 			path = MovYaAss;
 			sourceTree = "<group>";
@@ -312,6 +325,7 @@
 				E690B62718B22CE500C36F0A /* main.m in Sources */,
 				7A7DA037DCEA788FE6032F25 /* SKTileMatrix.m in Sources */,
 				7A7DA9D82F2A768FDC90AC07 /* SKTileMatrixController.m in Sources */,
+				7A7DA5598C9848A40BABE4CD /* SKInputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
