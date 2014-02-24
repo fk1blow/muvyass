@@ -17,47 +17,23 @@
     id eventMonitor;   // An event monitor object; instance of
 }
 
+#pragma mark initialize application
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    /** Initialize matrix and controller  */
+    /** Initialize matrix and tile controller */
 
+    int configurationMatrix [2] = {2, 2};
     // initialize tile matrix
-    int matrixConfiguration[2] = {2,2};
-    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:matrixConfiguration
+    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:configurationMatrix
                                                         andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];
-    // initialize tiles controller
+
     SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] initWithTileMatrix:tileMatrix];
-
-    /** Initialize events controller */
-
-    // @TODO refactor object by rename or just delete it
-    // Initializing events controller
-	SKEventsController* eventsCtrl = [[SKEventsController alloc] init];
 
     /** Initialize input controller */
 
     // should manage the user keyboard input
     SKInputController *inputController = [[SKInputController alloc] init];
-
-    /** some other stuff */
-
-    SKFocusedWindow * focusedWindowController = [[SKFocusedWindow alloc] init];
-    [focusedWindowController setCurrentFocusedWindow:self.window];
-
-    NSEvent * (^monitorHandler)(NSEvent *);
-    monitorHandler = ^NSEvent * (NSEvent * theEvent){
-        [eventsCtrl handleEvent:theEvent];
-        [focusedWindowController moveWindowTo:CGRectMake(0, 0, 300, 150)];
-
-		// Return the event, a new event, or, to stop
-        // the event from being dispatched, nil
-        return theEvent;
-    };
-    
-    // Creates an object we do not own, but must keep track
-    // of so that it can be "removed" when we're done
-    eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask | NSFlagsChangedMask
-                                                         handler:monitorHandler];
 }
 
 
