@@ -10,6 +10,7 @@
 		7A7DA037DCEA788FE6032F25 /* SKTileMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DA7C02DFBC7A174CE1EDB /* SKTileMatrix.m */; };
 		7A7DA5598C9848A40BABE4CD /* SKInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DABFC4B6C3CA2DCE57A53 /* SKInputController.m */; };
 		7A7DA9D82F2A768FDC90AC07 /* SKTileMatrixController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DAE5EAFE44109C6F9317A /* SKTileMatrixController.m */; };
+		7A7DAB22DA3012120B3F08A5 /* SKMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7DA95ECF5249F62CB5701D /* SKMapping.m */; };
 		E690B61B18B22CE500C36F0A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E690B61A18B22CE500C36F0A /* Cocoa.framework */; };
 		E690B62518B22CE500C36F0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E690B62318B22CE500C36F0A /* InfoPlist.strings */; };
 		E690B62718B22CE500C36F0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E690B62618B22CE500C36F0A /* main.m */; };
@@ -40,8 +41,10 @@
 		7A7DA241B81F86A31075D034 /* SKInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKInputController.h; sourceTree = "<group>"; };
 		7A7DA5C6BAF4474021C01EBB /* SKTileMatrixController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTileMatrixController.h; sourceTree = "<group>"; };
 		7A7DA7C02DFBC7A174CE1EDB /* SKTileMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileMatrix.m; sourceTree = "<group>"; };
+		7A7DA95ECF5249F62CB5701D /* SKMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMapping.m; sourceTree = "<group>"; };
 		7A7DABFC4B6C3CA2DCE57A53 /* SKInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKInputController.m; sourceTree = "<group>"; };
 		7A7DAE5EAFE44109C6F9317A /* SKTileMatrixController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTileMatrixController.m; sourceTree = "<group>"; };
+		7A7DAEC7F0D9ED69C109818B /* SKMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMapping.h; sourceTree = "<group>"; };
 		E690B61718B22CE500C36F0A /* MovYaAss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovYaAss.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E690B61A18B22CE500C36F0A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E690B61D18B22CE500C36F0A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -99,6 +102,13 @@
 			path = Tiles;
 			sourceTree = "<group>";
 		};
+		7A7DA69F8657D2A0DC6A57F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7A7DABE0503941F506ED37F8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,8 @@
 			children = (
 				7A7DABFC4B6C3CA2DCE57A53 /* SKInputController.m */,
 				7A7DA241B81F86A31075D034 /* SKInputController.h */,
+				7A7DA95ECF5249F62CB5701D /* SKMapping.m */,
+				7A7DAEC7F0D9ED69C109818B /* SKMapping.h */,
 			);
 			path = Keys;
 			sourceTree = "<group>";
@@ -157,7 +169,6 @@
 		E690B62018B22CE500C36F0A /* MovYaAss */ = {
 			isa = PBXGroup;
 			children = (
-				E690B65818B22DC300C36F0A /* Models */,
 				E690B65618B22D7500C36F0A /* Controllers */,
 				E690B62C18B22CE500C36F0A /* SKAppDelegate.h */,
 				E690B62D18B22CE500C36F0A /* SKAppDelegate.m */,
@@ -167,6 +178,7 @@
 				7A7DABE0503941F506ED37F8 /* Services */,
 				7A7DA1A6EE777A87BD6E40B6 /* Tiles */,
 				7A7DAD7EEBF4638F1F6B6E35 /* Keys */,
+				7A7DA69F8657D2A0DC6A57F3 /* Models */,
 			);
 			path = MovYaAss;
 			sourceTree = "<group>";
@@ -211,13 +223,6 @@
 			);
 			name = Controllers;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		E690B65818B22DC300C36F0A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +331,7 @@
 				7A7DA037DCEA788FE6032F25 /* SKTileMatrix.m in Sources */,
 				7A7DA9D82F2A768FDC90AC07 /* SKTileMatrixController.m in Sources */,
 				7A7DA5598C9848A40BABE4CD /* SKInputController.m in Sources */,
+				7A7DAB22DA3012120B3F08A5 /* SKMapping.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

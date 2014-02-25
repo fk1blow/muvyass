@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6fb9389-564c-4eed-a40c-db5eb9ee38de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SKFocusedWindow.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SKFocusedWindow.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.xcworkspace/xcuserdata/dragos.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.xcworkspace/xcuserdata/dragos.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.h" afterPath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" afterPath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SKEventsController.h" afterPath="$PROJECT_DIR$/SKEventsController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SKEventsController.m" afterPath="$PROJECT_DIR$/SKEventsController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.h" afterPath="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m" afterPath="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.h" afterPath="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m" afterPath="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -35,60 +32,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SKTileMatrix.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="34" selection-start="171" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SKTileMatrix.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="1" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SKFocusedWindow.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SKFocusedWindow.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="1" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SKTileMatrixController.h" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="61" selection-start="269" selection-end="269" vertical-scroll-proportion="0.23592493" vertical-offset="0" max-vertical-offset="746">
-              <folding>
-                <element signature="e#101#134#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SKTileMatrixController.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="16" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SKAppDelegate.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="26" selection-start="732" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
-              <folding>
-                <element signature="e#149#174#0" expanded="true" />
-              </folding>
+            <state line="35" column="60" selection-start="1062" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SKInputController.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="4" selection-start="821" selection-end="821" vertical-scroll-proportion="0.6977964" vertical-offset="73" max-vertical-offset="1026">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SKMapping.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMapping.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="324">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SKMapping.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMapping.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="31" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,15 +91,17 @@
         <option value="$PROJECT_DIR$/SKFocusedWindowController.m" />
         <option value="$PROJECT_DIR$/SKFocusedWindowController.h" />
         <option value="$PROJECT_DIR$/SKFocusedWindow.h" />
-        <option value="$PROJECT_DIR$/MovYaAss/SKAppDelegate.h" />
         <option value="$PROJECT_DIR$/SKFocusedWindow.m" />
         <option value="$PROJECT_DIR$/MovYaAss/SKTileMatrix.h" />
         <option value="$PROJECT_DIR$/MovYaAss/SKTileMatrix.m" />
-        <option value="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" />
-        <option value="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.m" />
-        <option value="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.h" />
-        <option value="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m" />
         <option value="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.h" />
+        <option value="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m" />
+        <option value="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.h" />
+        <option value="$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.m" />
+        <option value="$PROJECT_DIR$/MovYaAss/SKAppDelegate.h" />
+        <option value="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.h" />
+        <option value="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m" />
+        <option value="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" />
       </list>
     </option>
   </component>
@@ -201,7 +178,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -274,25 +251,7 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Tiles" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MovYaAss" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MovYaAss" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
+              <option name="myItemId" value="Keys" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -305,7 +264,7 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.TypeScript" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="MovYaAss" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -364,20 +323,20 @@
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21100917" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18768859" sideWeight="0.39853558" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18511905" sideWeight="0.38939857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18511905" sideWeight="0.5066259" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18511905" sideWeight="0.49235475" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18511905" sideWeight="0.3985729" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18768859" sideWeight="0.3966597" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21100917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21100917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21100917" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -407,34 +366,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SKEventsController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SKEventsController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SKEventsController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <folding>
-            <element signature="e#149#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357" />
@@ -442,9 +373,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SKEventsController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="286">
-          <folding />
-        </state>
+        <state line="16" column="4" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0" vertical-offset="208" max-vertical-offset="286" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SKEventsController.h">
@@ -454,68 +383,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SKEventsController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="50" selection-start="398" selection-end="398" vertical-scroll-proportion="0.46280992" vertical-offset="0" max-vertical-offset="726">
+        <state line="21" column="50" selection-start="398" selection-end="398" vertical-scroll-proportion="0.46280992" vertical-offset="0" max-vertical-offset="726" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="49" selection-start="316" selection-end="316" vertical-scroll-proportion="0.34316355" vertical-offset="0" max-vertical-offset="746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="215" selection-end="215" vertical-scroll-proportion="0.23592493" vertical-offset="0" max-vertical-offset="746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SKFocusedWindow.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="72" selection-start="555" selection-end="555" vertical-scroll-proportion="0.34316355" vertical-offset="0" max-vertical-offset="746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="54" selection-start="306" selection-end="306" vertical-scroll-proportion="0.27882037" vertical-offset="0" max-vertical-offset="746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="25" selection-start="199" selection-end="199" vertical-scroll-proportion="0.1930295" vertical-offset="0" max-vertical-offset="746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SKFocusedWindow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="0.18887722" vertical-offset="0" max-vertical-offset="953" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMapping.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="746">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="59" selection-start="267" selection-end="267" vertical-scroll-proportion="0.21304926" vertical-offset="0" max-vertical-offset="751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SKFocusedWindow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="264" selection-end="264" vertical-scroll-proportion="0.30853996" vertical-offset="0" max-vertical-offset="726">
-          <folding />
-        </state>
+        <state line="8" column="9" selection-start="158" selection-end="158" vertical-scroll-proportion="0.1930295" vertical-offset="0" max-vertical-offset="746" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="26" selection-start="732" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1104">
-          <folding>
-            <element signature="e#149#174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SKFocusedWindow.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="416">
+        <state line="35" column="60" selection-start="1062" selection-end="1079" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="900">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.h">
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKInputController.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="171" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="400">
+        <state line="9" column="4" selection-start="181" selection-end="181" vertical-scroll-proportion="0.21715818" vertical-offset="0" max-vertical-offset="746">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrix.m">
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMapping.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+        <state line="8" column="31" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="288">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.m">
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="16" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+        <state line="41" column="4" selection-start="821" selection-end="821" vertical-scroll-proportion="0.6977964" vertical-offset="73" max-vertical-offset="1026">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/Tiles/SKTileMatrixController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="61" selection-start="269" selection-end="269" vertical-scroll-proportion="0.23592493" vertical-offset="0" max-vertical-offset="746">
-          <folding>
-            <element signature="e#101#134#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

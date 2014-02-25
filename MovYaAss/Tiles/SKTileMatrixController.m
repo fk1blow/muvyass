@@ -6,9 +6,13 @@
 #import "SKTileMatrixController.h"
 
 
-@implementation SKTileMatrixController {
+@interface SKTileMatrixController()
 
-}
+@property (strong) SKTileMatrix *tileMatrix;
+
+@end
+
+@implementation SKTileMatrixController
 
 - (id) initWithTileMatrix:(SKTileMatrix *)matrix {
     self = [super init];
