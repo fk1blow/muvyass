@@ -4,14 +4,13 @@
 //
 
 #import "SKInputController.h"
+#import "SKMappingController.h"
 
 #pragma mark Extension
 
-@interface SKInputController() {
-}
-
+@interface SKInputController()
     @property (strong) id eventMonitor;
-
+    @property (strong) SKMappingController *mappingController;
 @end
 
 #pragma mark Implementation
@@ -24,6 +23,7 @@
     self = [super init];
     if (self) {
         [self addKeyboardMonitor];
+        _mappingController = [[SKMappingController alloc] init];
     }
     return self;
 }
@@ -32,13 +32,14 @@
 
 - (void)addKeyboardMonitor {
     NSEvent * (^monitorHandler)(NSEvent *);
-    monitorHandler = ^NSEvent * (NSEvent * theEvent){
-        NSLog(@"key event handled..");
-//        [focusedWindowController moveWindowTo:CGRectMake(0, 0, 300, 150)];
+    monitorHandler = ^NSEvent * (NSEvent * inputEvent){
+        [self.mappingController mapCommandToEvent:inputEvent];
+
+        //[focusedWindowController moveWindowTo:CGRectMake(0, 0, 300, 150)];
 
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
-        return theEvent;
+        return inputEvent;
     };
 
     // Creates an object we do not own, but must keep track

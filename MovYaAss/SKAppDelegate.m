@@ -7,7 +7,6 @@
 //
 
 #import "SKAppDelegate.h"
-#import "SKEventsController.h"
 #import "SKTileMatrix.h"
 #import "SKTileMatrixController.h"
 #import "SKInputController.h"
@@ -30,7 +29,7 @@
 
     SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] initWithTileMatrix:tileMatrix];
 
-    /** Initialize input controller */
+    /** Initialize input */
 
     // should manage the user keyboard input
     SKInputController *inputController = [[SKInputController alloc] init];

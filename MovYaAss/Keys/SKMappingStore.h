@@ -3,10 +3,8 @@
 // Copyright (c) 2014 Dragos Tudorache. All rights reserved.
 //
 
-#import "SKMapping.h"
+#import <Foundation/Foundation.h>
 
 
-@implementation SKMapping {
-
-}
+@interface SKMappingStore : NSObject
 @end
