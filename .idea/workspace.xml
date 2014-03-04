@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6fb9389-564c-4eed-a40c-db5eb9ee38de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.m" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MovYaAss/Keys/SKMapping.h" afterPath="$PROJECT_DIR$/MovYaAss/Keys/SKMappingStore.h" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MovYaAss/Keys/SKMapping.m" afterPath="$PROJECT_DIR$/MovYaAss/Keys/SKMappingStore.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" afterPath="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m" afterPath="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/MovYaAss.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="MovYaAss.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,6 +25,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="SKAppDelegate.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="798" selection-end="798" vertical-scroll-proportion="0.536193" vertical-offset="0" max-vertical-offset="746">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SKMappingController.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.m">
           <provider selected="true" editor-type-id="text-editor">
@@ -52,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SKMappingController.h" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SKMappingController.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="60" selection-start="471" selection-end="471" vertical-scroll-proportion="0.32171583" vertical-offset="0" max-vertical-offset="746">
+            <state line="22" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
               <folding />
             </state>
           </provider>
@@ -89,12 +91,12 @@
         <option value="$PROJECT_DIR$/MovYaAss/SKAppDelegate.h" />
         <option value="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.h" />
         <option value="$PROJECT_DIR$/MovYaAss/Keys/SKMappingService.m" />
-        <option value="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" />
         <option value="$PROJECT_DIR$/MovYaAss/Keys/SKMapping.m" />
         <option value="$PROJECT_DIR$/MovYaAss/Keys/SKMappingStore.m" />
         <option value="$PROJECT_DIR$/MovYaAss/Keys/SKInputController.m" />
         <option value="$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.m" />
         <option value="$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.h" />
+        <option value="$PROJECT_DIR$/MovYaAss/SKAppDelegate.m" />
       </list>
     </option>
   </component>
@@ -413,18 +415,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="798" selection-end="798" vertical-scroll-proportion="0.5288562" vertical-offset="0" max-vertical-offset="953">
-          <folding>
-            <element signature="e#149#174#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMappingStore.m">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="0.16998951" vertical-offset="0" max-vertical-offset="953">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="310" column="18" selection-start="12381" selection-end="12381" vertical-scroll-proportion="6.0095496" vertical-offset="443" max-vertical-offset="9104">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="512">
           <folding />
         </state>
       </provider>
@@ -438,23 +452,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework/Headers/NSEvent.h">
+    <entry file="file://$PROJECT_DIR$/MovYaAss/SKAppDelegate.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="310" column="18" selection-start="12381" selection-end="12381" vertical-scroll-proportion="6.0095496" vertical-offset="443" max-vertical-offset="9104">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="512">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MovYaAss/Keys/SKMappingController.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="60" selection-start="471" selection-end="471" vertical-scroll-proportion="0.32171583" vertical-offset="0" max-vertical-offset="746">
+        <state line="28" column="0" selection-start="798" selection-end="798" vertical-scroll-proportion="0.536193" vertical-offset="0" max-vertical-offset="746">
           <folding />
         </state>
       </provider>
