@@ -9,7 +9,7 @@
 #pragma mark Extension
 
 @interface SKInputController()
-    @property (strong) id eventMonitor;
+//    @property (strong) id eventMonitor;
     @property (strong) SKMappingController *mappingController;
 @end
 
@@ -31,12 +31,18 @@
 #pragma mark Private
 
 - (void)addKeyboardMonitor {
-    NSEvent * (^monitorHandler)(NSEvent *);
-    monitorHandler = ^NSEvent * (NSEvent * inputEvent){
-        [self.mappingController mapCommandToEvent:inputEvent];
+    NSEvent * (^keyDownHandler)(NSEvent *);
+    NSEvent * (^keyUpHandler)(NSEvent *);
 
-        //[focusedWindowController moveWindowTo:CGRectMake(0, 0, 300, 150)];
+    keyDownHandler = ^NSEvent * (NSEvent * inputEvent){
+        [self.mappingController mapInputFor:inputEvent];
+        // Return the event, a new event, or, to stop
+        // the event from being dispatched, nil
+        return inputEvent;
+    };
 
+    keyUpHandler = ^NSEvent * (NSEvent * inputEvent){
+        [self.mappingController unmapInputFor:inputEvent];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
         return inputEvent;
@@ -44,8 +50,11 @@
 
     // Creates an object we do not own, but must keep track
     // of so that it can be "removed" when we're done
-    self.eventMonitor = [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask | NSFlagsChangedMask
-                                                         handler:monitorHandler];
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask | NSFlagsChangedMask
+                                                         handler:keyDownHandler];
+
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyUpMask | NSFlagsChangedMask
+                                          handler:keyUpHandler];
 }
 
 

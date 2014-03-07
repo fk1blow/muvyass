@@ -17,6 +17,7 @@
 //
 @interface SKMappingController : NSObject
 
--(void) mapCommandToEvent:(NSEvent *)inputEvent;
+-(void) mapInputFor:(NSEvent *)event;
+-(void) unmapInputFor:(NSEvent *)event;
 
 @end
