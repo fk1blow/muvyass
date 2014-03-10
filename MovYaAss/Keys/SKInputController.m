@@ -34,18 +34,18 @@
     NSEvent * (^keyDownHandler)(NSEvent *);
     NSEvent * (^keyUpHandler)(NSEvent *);
 
-    keyDownHandler = ^NSEvent * (NSEvent * inputEvent){
-        [self.mappingController mapInputFor:inputEvent];
+    keyDownHandler = ^NSEvent * (NSEvent * keyboardEvent) {
+        [self.mappingController mapInputFor:keyboardEvent];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
-        return inputEvent;
+        return keyboardEvent;
     };
 
-    keyUpHandler = ^NSEvent * (NSEvent * inputEvent){
-        [self.mappingController unmapInputFor:inputEvent];
+    keyUpHandler = ^NSEvent * (NSEvent * keyboardEvent){
+        [self.mappingController unmapInputFor:keyboardEvent];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
-        return inputEvent;
+        return keyboardEvent;
     };
 
     // Creates an object we do not own, but must keep track

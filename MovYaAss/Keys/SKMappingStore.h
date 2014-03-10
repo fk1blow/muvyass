@@ -7,4 +7,9 @@
 
 
 @interface SKMappingStore : NSObject
+
+@property (nonatomic, strong) NSDictionary *keyboardMappings;
+
+-(void)recognizeMappings:(NSSet *)mappings;
+
 @end
