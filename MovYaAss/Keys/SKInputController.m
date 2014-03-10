@@ -34,14 +34,28 @@
     NSEvent * (^keyDownHandler)(NSEvent *);
     NSEvent * (^keyUpHandler)(NSEvent *);
 
-    keyDownHandler = ^NSEvent * (NSEvent * keyboardEvent) {
-        [self.mappingController mapInputFor:keyboardEvent];
+    keyDownHandler = ^NSEvent * (NSEvent * event) {
+        // check if modifiers are present
+        if (([event type] == NSFlagsChanged)) {
+            // and check them when they are set
+            // 256 represents the default flags without any mask
+            if ([event modifierFlags] != 256) {
+                [self.mappingController mapInputFor:event];
+            }
+        } else {
+            if (![event isARepeat]) {
+                [self.mappingController mapInputFor:event];
+            }
+        }
+
+//        NSLog(@"%i", [event keyCode]);
+
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
-        return keyboardEvent;
+        return event;
     };
 
-    keyUpHandler = ^NSEvent * (NSEvent * keyboardEvent){
+    keyUpHandler = ^NSEvent * (NSEvent * keyboardEvent) {
         [self.mappingController unmapInputFor:keyboardEvent];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
