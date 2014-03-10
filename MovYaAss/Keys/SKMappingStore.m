@@ -14,7 +14,8 @@
     self = [super init];
     if (self) {
         _keyboardMappings = @{
-                @"left": [NSSet setWithObjects:@0, @1, @2, nil]
+            @"left": [NSMutableSet setWithObjects:@58, @55, @123, nil],
+            @"right": [NSMutableSet setWithObjects:@58, @55, @124, nil]
         };
     }
     return self;
@@ -24,16 +25,11 @@
     NSDictionary *mappings = self.keyboardMappings;
 
 
-    NSLog(@"%c", [self.keyboardMappings[@"left"] isEqualTo:input]);
-
-    //for(id key in self.keyboardMappings) {
-    //    if ([mappings[key] isEqualTo:input]) {
-    //        NSLog(@"43224");
-    //    }
-    //}
-
-
-    NSLog(@"mappings tested %@ for actual mappings %@", input, self.keyboardMappings);
+    for(id item in self.keyboardMappings) {
+       if ([input isEqualToSet:self.keyboardMappings[item]]) {
+           NSLog(@"%@", item);
+        }
+    }
 }
 
 @end
