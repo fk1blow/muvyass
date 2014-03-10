@@ -41,11 +41,8 @@
 
 -(void) mapInputFor:(NSEvent *)event {
     NSNumber *keyCode = [NSNumber numberWithUnsignedShort:event.keyCode];
-    // if the input set does not already contains the new element and if input is not repeated
-    if ( ! [self.currentInput containsObject:keyCode] && ! [event isARepeat] ) {
-        [self.currentInput addObject:keyCode];
-        [self.mappingStore recognizeMappings:self.currentInput];
-    }
+    [self.currentInput addObject:keyCode];
+    [self.mappingStore recognizeMappings:self.currentInput];
 }
 
 -(void) unmapInputFor:(NSEvent *)event {
