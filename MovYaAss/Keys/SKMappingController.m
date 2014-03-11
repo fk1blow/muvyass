@@ -47,6 +47,7 @@
 
 -(void) unmapInputFor:(NSEvent *)event {
     NSNumber *keyCode = [NSNumber numberWithUnsignedShort:event.keyCode];
+    NSLog(@"should remove input %@", keyCode);
     if ( [self.currentInput containsObject:keyCode] ) {
         [self.currentInput removeObject:keyCode];
     }
