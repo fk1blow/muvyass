@@ -4,6 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SKMappingStore.h"
 
 
 //
@@ -15,9 +16,9 @@
 // - it finishes when a key is released because, because that
 // should mark the beginning of a new input mapping sequence
 //
-@interface SKMappingController : NSObject
+@interface SKMappingController : NSObject <SKMappingStoreDelegate>
 
--(void) mapInputFor:(NSEvent *)event;
--(void) unmapInputFor:(NSEvent *)event;
+-(void) mapCommandFor:(NSEvent *)event;
+-(void) unmapCommandFor:(NSEvent *)event;
 
 @end

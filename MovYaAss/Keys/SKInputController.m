@@ -38,33 +38,26 @@
         BOOL hasModifiers = [event modifierFlags] > 256;
 
         // check if modifiers are present
-        //if (([event type] == NSFlagsChanged)) {
-        //    // ...and process input only if modifier flags are added, that is
-        //    // only when the key is pressed and not after, as it seems to behaves atm
-        //    if (hasModifiers) {
-        //        [self.mappingController mapInputFor:event];
-        //    }
-        //} else {
-        //    if (![event isARepeat]) {
-        //        [self.mappingController mapInputFor:event];
-        //    }
-        //}
-
-        NSLog(@"%i", [event keyCode]);
-
+        if (([event type] == NSFlagsChanged)) {
+            // ...and process input only if modifier flags are added, that is
+            // only when the key is pressed and not after, as it seems to behaves atm
+            if (hasModifiers) {
+                [self.mappingController mapCommandFor:event];
+            } else {
+                [self.mappingController unmapCommandFor:event];
+            }
+        } else {
+            if (![event isARepeat]) {
+                [self.mappingController mapCommandFor:event];
+            }
+        }
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
         return event;
     };
 
     keyUpHandler = ^NSEvent * (NSEvent * event) {
-        NSLog(@"keyboard up modifiers %d", [event modifierFlags]);
-        NSLog(@"keyboard up %@", event);
-
-        if ([event modifierFlags] & NSControlKeyMask == NSControlKeyMask) {
-            NSLog(@"asdasd");
-        }
-        //[self.mappingController unmapInputFor:keyboardEvent];
+        [self.mappingController unmapCommandFor:event];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
         return event;
@@ -72,11 +65,10 @@
 
     // Creates an object we do not own, but must keep track
     // of so that it can be "removed" when we're done
-    //[NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask | NSFlagsChangedMask
-    //                                                     handler:keyDownHandler];
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyDownMask | NSFlagsChangedMask
+                                                         handler:keyDownHandler];
 
-    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyUpMask | NSFlagsChangedMask
-                                          handler:keyUpHandler];
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyUpMask handler:keyUpHandler];
 }
 
 

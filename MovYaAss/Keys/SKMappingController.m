@@ -33,24 +33,29 @@
 
 -(id) init {
     self = [super init];
-    if (self)
+    if (self) {
         _currentInput = [[NSMutableSet alloc] init];
         _mappingStore = [[SKMappingStore alloc] init];
+        [_mappingStore setDelegate:self];
+    }
     return self;
 }
 
--(void) mapInputFor:(NSEvent *)event {
+-(void) mapCommandFor:(NSEvent *)event {
     NSNumber *keyCode = [NSNumber numberWithUnsignedShort:event.keyCode];
     [self.currentInput addObject:keyCode];
     [self.mappingStore recognizeMappings:self.currentInput];
 }
 
--(void) unmapInputFor:(NSEvent *)event {
+-(void) unmapCommandFor:(NSEvent *)event {
     NSNumber *keyCode = [NSNumber numberWithUnsignedShort:event.keyCode];
-    NSLog(@"should remove input %@", keyCode);
     if ( [self.currentInput containsObject:keyCode] ) {
         [self.currentInput removeObject:keyCode];
     }
+}
+
+-(void)didRecognizedInputFor:(NSSet *)mappings {
+    NSLog(@"recognized input %@", mappings);
 }
 
 @end
