@@ -30,6 +30,15 @@
 
 #pragma mark Private
 
+
+/*
+    Monitors "keydown" event and intercepts the event trying
+    to map it to some command or "impulse" of some other object...
+
+    It separates the normal character keys from the modifier keys,
+    making it really easy to map. In adition, it unmaps modifier keys
+    having the keyUpHandler do the unmaping only for char keys
+*/
 - (void)addKeyboardMonitor {
     NSEvent * (^keyDownHandler)(NSEvent *);
     NSEvent * (^keyUpHandler)(NSEvent *);
@@ -37,15 +46,14 @@
     keyDownHandler = ^NSEvent * (NSEvent * event) {
         BOOL hasModifiers = [event modifierFlags] > 256;
 
-        // check if modifiers are present
+        // Guarantees that only Key Modifiers are present
         if (([event type] == NSFlagsChanged)) {
             // ...and process input only if modifier flags are added, that is
             // only when the key is pressed and not after, as it seems to behaves atm
-            if (hasModifiers) {
+            if (hasModifiers)
                 [self.mappingController mapCommandFor:event];
-            } else {
+            else
                 [self.mappingController unmapCommandFor:event];
-            }
         } else {
             if (![event isARepeat]) {
                 [self.mappingController mapCommandFor:event];
