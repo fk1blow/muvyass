@@ -18,8 +18,8 @@
 
     /*
         reference to the mapping store that will recognize input commands
-        Based on a set, the mappingStore will have to test if a given set
-        of inputs is present inside another which belongs to a specific command.
+        Based on a set; the mappingStore will have to test if a given set
+        of inputs is present inside mappingStore which belongs to a specific command.
         Also, the store should have a delegate to call when a command was found!
     */
     @property (nonatomic, strong) SKMappingStore *mappingStore;

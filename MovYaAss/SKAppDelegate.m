@@ -22,12 +22,12 @@
 {
     /** Initialize matrix and tile controller */
 
-    int configurationMatrix [2] = {2, 2};
+//    int configurationMatrix [2] = {2, 2};
     // initialize tile matrix
-    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:configurationMatrix
-                                                        andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];
+//    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:configurationMatrix
+//                                                        andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];
 
-    SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] initWithTileMatrix:tileMatrix];
+//    SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] initWithTileMatrix:tileMatrix];
 
     /** Initialize input */
 
