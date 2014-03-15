@@ -11,7 +11,7 @@
     int matrixConfiguration[2];
 }
 
-- (id) initWithTileMatrix:(int *)matrix andWrapperFrame:(CGRect)frame {
+- (id)initWithTileMatrix:(int *)matrix andVisibleFrame:(CGRect)frame {
     self = [super init];
     if ( self ) {
         matrixConfiguration[0] = matrix[0];

@@ -9,9 +9,6 @@
 
 @interface SKTileMatrixController : NSObject
 
-// @TODO move this variable to a private scope of this object
-@property (retain) SKTileMatrix *tileMatrix;
-
 - (id) initWithTileMatrix:(SKTileMatrix *)tileMatrix;
 
 @end
