@@ -12,7 +12,7 @@
 // named commands like: move, grow, shrink, move top, etc
 //
 // - Store every key pressed
-// - check if the keys are corresponding to a predefined mappings
+// - check if the keys correspond to a set predefined mappings
 // - it finishes when a key is released because, because that
 // should mark the beginning of a new input mapping sequence
 //
