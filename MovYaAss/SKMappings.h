@@ -4,8 +4,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SKMappingStore.h"
 
+@class SKMappings;
+@protocol SKMappingDelegate<NSObject>
+
+-(void)didRecognizedMappings:(NSDictionary *)mappings;
+
+@end
 
 //
 // Maps a set of inputs(keyboard, mouse, etc, to some
@@ -16,7 +21,10 @@
 // - it finishes when a key is released because, because that
 // should mark the beginning of a new input mapping sequence
 //
-@interface SKMappingController : NSObject <SKMappingStoreDelegate>
+@interface SKMappings : NSObject {
+}
+
+@property (nonatomic, weak) id <SKMappingDelegate>delegate;
 
 -(void) mapCommandFor:(NSEvent *)event;
 -(void) unmapCommandFor:(NSEvent *)event;

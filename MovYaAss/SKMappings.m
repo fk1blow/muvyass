@@ -3,12 +3,12 @@
 // Copyright (c) 2014 Dragos Tudorache. All rights reserved.
 //
 
-#import "SKMappingController.h"
+#import "SKMappings.h"
 #import "SKMappingStore.h"
 
 #pragma mark Extension
 
-@interface SKMappingController()
+@interface SKMappings ()
     /*
         Holds a reference to all the currently active input items
         In the case of the keyboard, this contains an list of all
@@ -27,16 +27,13 @@
 
 #pragma mark Implementation
 
-@implementation SKMappingController {
-
-}
+@implementation SKMappings
 
 -(id) init {
     self = [super init];
     if (self) {
         _currentInput = [[NSMutableSet alloc] init];
         _mappingStore = [[SKMappingStore alloc] init];
-        [_mappingStore setDelegate:self];
     }
     return self;
 }
@@ -44,7 +41,11 @@
 -(void) mapCommandFor:(NSEvent *)event {
     NSNumber *keyCode = [NSNumber numberWithUnsignedShort:event.keyCode];
     [self.currentInput addObject:keyCode];
-    [self.mappingStore recognizeMappings:self.currentInput];
+    NSDictionary *recognized = [self.mappingStore recognizeMappings:self.currentInput];
+    if (recognized) {
+        if ([self.delegate respondsToSelector:@selector(didRecognizedMappings:)])
+            [self.delegate didRecognizedMappings:recognized];
+    }
 }
 
 -(void) unmapCommandFor:(NSEvent *)event {
@@ -54,8 +55,10 @@
     }
 }
 
--(void)didRecognizedInputFor:(NSSet *)mappings {
-    NSLog(@"recognized input %@", mappings);
-}
+// didRecognizeMappings: forKey: should be called inside skinputcontroller
+// mappings ctrl should only be a mediator between mappingstore and input controller
+/*-(void)didRecognizedMappings:(NSSet *)mappings forKey:(NSString *)key {
+    NSLog(@"recognized key %@ for input %@", key, mappings);
+}*/
 
 @end
