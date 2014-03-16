@@ -11,9 +11,9 @@
 }
 
 // the invisible frame for the tiles wrapper rect
-@property (assign) CGRect wrapperFrame;
+@property (nonatomic, assign) CGRect wrapperFrame;
 
 // provide a matrix for the tile and a frame for the wrapper
-- (id) initWithTileMatrix:(int *)matrix andVisibleFrame:(CGRect)frame;
+- (id) initWithTileMatrix:(NSArray *)matrix andVisibleFrame:(CGRect)frame;
 
 @end
