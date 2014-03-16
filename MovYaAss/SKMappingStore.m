@@ -24,14 +24,17 @@
     return self;
 }
 
--(void)recognizeMappings:(NSSet *)input {
+-(NSDictionary *)recognizeMappings:(NSSet *)input {
+    NSDictionary *result;
     for(id key in self.keyboardMappings) {
         NSSet *item = self.keyboardMappings[key];
        if ([input isEqualToSet:item]) {
-            if ([self.delegate respondsToSelector:@selector(didRecognizedInputFor:)])
-                [self.delegate didRecognizedInputFor:item];
+           result = [NSDictionary dictionaryWithObject:item forKey:key];
+           //if ([self.delegate respondsToSelector:@selector(didRecognizedMappings:forKey:)])
+           //    [self.delegate didRecognizedMappings:item forKey:key];
        }
     }
+    return result;
 }
 
 @end
