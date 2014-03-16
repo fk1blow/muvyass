@@ -9,6 +9,7 @@
 
 @interface SKTileMatrixController : NSObject
 
-- (id) initWithTileMatrix:(SKTileMatrix *)tileMatrix;
+//- (id) initWithTileMatrix:(SKTileMatrix *)tileMatrix;
+//- (id) initWithArrayOfTiles:(int [2])tiles;
 
 @end

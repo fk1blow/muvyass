@@ -4,6 +4,7 @@
 //
 
 #import "SKTileMatrixController.h"
+#import "SKTileMatrix.h"
 
 
 @interface SKTileMatrixController()
@@ -14,10 +15,11 @@
 
 @implementation SKTileMatrixController
 
-- (id) initWithTileMatrix:(SKTileMatrix *)matrix {
+- (id) init {
     self = [super init];
     if (self) {
-        _tileMatrix = matrix;
+        _tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:@[@2, @4]
+                                               andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];
     }
     return self;
 }
