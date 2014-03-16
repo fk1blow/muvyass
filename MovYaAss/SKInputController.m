@@ -4,13 +4,12 @@
 //
 
 #import "SKInputController.h"
-#import "SKMappingController.h"
+#import "SKMappings.h"
 
 #pragma mark Extension
 
 @interface SKInputController()
-//    @property (strong) id eventMonitor;
-    @property (strong) SKMappingController *mappingController;
+    @property (strong) SKMappings *mappingController;
 @end
 
 #pragma mark Implementation
@@ -23,9 +22,16 @@
     self = [super init];
     if (self) {
         [self addKeyboardMonitor];
-        _mappingController = [[SKMappingController alloc] init];
+        _mappingController = [[SKMappings alloc] init];
+        [_mappingController setDelegate:self];
     }
     return self;
+}
+
+#pragma mark Delegates
+
+-(void)didRecognizedMappings:(NSSet *)mappings {
+    NSLog(@"recognized mappnings %@", mappings);
 }
 
 #pragma mark Private
