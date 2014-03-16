@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E64C62DF18D44F5C00FAD5D7 /* SKMappingController.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C62DC18D44F5C00FAD5D7 /* SKMappingController.m */; };
+		E64C62DF18D44F5C00FAD5D7 /* SKMappings.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C62DC18D44F5C00FAD5D7 /* SKMappings.m */; };
 		E64C62E018D44F5C00FAD5D7 /* SKMappingStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C62DE18D44F5C00FAD5D7 /* SKMappingStore.m */; };
 		E64C62E318D4509000FAD5D7 /* SKInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C62E218D4509000FAD5D7 /* SKInputController.m */; };
 		E64C62E818D450BA00FAD5D7 /* SKTileMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = E64C62E518D450BA00FAD5D7 /* SKTileMatrix.m */; };
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E64C62DB18D44F5C00FAD5D7 /* SKMappingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMappingController.h; sourceTree = "<group>"; };
-		E64C62DC18D44F5C00FAD5D7 /* SKMappingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMappingController.m; sourceTree = "<group>"; };
+		E64C62DB18D44F5C00FAD5D7 /* SKMappings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMappings.h; sourceTree = "<group>"; };
+		E64C62DC18D44F5C00FAD5D7 /* SKMappings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMappings.m; sourceTree = "<group>"; };
 		E64C62DD18D44F5C00FAD5D7 /* SKMappingStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMappingStore.h; sourceTree = "<group>"; };
 		E64C62DE18D44F5C00FAD5D7 /* SKMappingStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMappingStore.m; sourceTree = "<group>"; };
 		E64C62E118D4509000FAD5D7 /* SKInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKInputController.h; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 		E64C62DA18D44F3700FAD5D7 /* Mappings */ = {
 			isa = PBXGroup;
 			children = (
-				E64C62DB18D44F5C00FAD5D7 /* SKMappingController.h */,
-				E64C62DC18D44F5C00FAD5D7 /* SKMappingController.m */,
+				E64C62DB18D44F5C00FAD5D7 /* SKMappings.h */,
+				E64C62DC18D44F5C00FAD5D7 /* SKMappings.m */,
 				E64C62DD18D44F5C00FAD5D7 /* SKMappingStore.h */,
 				E64C62DE18D44F5C00FAD5D7 /* SKMappingStore.m */,
 			);
@@ -317,7 +317,7 @@
 				E64C62E318D4509000FAD5D7 /* SKInputController.m in Sources */,
 				E690B62E18B22CE500C36F0A /* SKAppDelegate.m in Sources */,
 				E64C62EE18D450C800FAD5D7 /* AccessibilityWrapper.m in Sources */,
-				E64C62DF18D44F5C00FAD5D7 /* SKMappingController.m in Sources */,
+				E64C62DF18D44F5C00FAD5D7 /* SKMappings.m in Sources */,
 				E64C62E018D44F5C00FAD5D7 /* SKMappingStore.m in Sources */,
 				E64C62E918D450BA00FAD5D7 /* SKTileMatrixController.m in Sources */,
 				E64C62E818D450BA00FAD5D7 /* SKTileMatrix.m in Sources */,

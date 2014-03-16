@@ -7,7 +7,6 @@
 //
 
 #import "SKAppDelegate.h"
-#import "SKTileMatrix.h"
 #import "SKTileMatrixController.h"
 #import "SKInputController.h"
 
@@ -20,14 +19,16 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    /** Initialize matrix and tile controller */
+    /** Initialize tiles controller */
 
-//    int configurationMatrix [2] = {2, 2};
-    // initialize tile matrix
-//    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:configurationMatrix
-//                                                        andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];
 
-//    SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] initWithTileMatrix:tileMatrix];
+    /*
+    //initialize tile matrix
+    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:configurationMatrix
+                                                        andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];*/
+
+    int configurationMatrix [2] = {2, 2};
+    SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] init];
 
     /** Initialize input */
 
