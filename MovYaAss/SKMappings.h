@@ -6,7 +6,7 @@
 #import <Foundation/Foundation.h>
 
 @class SKMappings;
-@protocol SKMappingDelegate<NSObject>
+@protocol SKMappingsDelegate<NSObject>
 
 -(void)didRecognizedMappings:(NSDictionary *)mappings;
 
@@ -24,7 +24,7 @@
 @interface SKMappings : NSObject {
 }
 
-@property (nonatomic, weak) id <SKMappingDelegate>delegate;
+@property (nonatomic, weak) id <SKMappingsDelegate>delegate;
 
 -(void) mapCommandFor:(NSEvent *)event;
 -(void) unmapCommandFor:(NSEvent *)event;
