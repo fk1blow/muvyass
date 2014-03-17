@@ -55,10 +55,4 @@
     }
 }
 
-// didRecognizeMappings: forKey: should be called inside skinputcontroller
-// mappings ctrl should only be a mediator between mappingstore and input controller
-/*-(void)didRecognizedMappings:(NSSet *)mappings forKey:(NSString *)key {
-    NSLog(@"recognized key %@ for input %@", key, mappings);
-}*/
-
 @end
