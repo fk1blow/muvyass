@@ -18,9 +18,7 @@
 - (id) init {
     self = [super init];
     if (self) {
-        int tileConfiguration[2] = {2, 2};
-        _tileMatrix = [[SKTileMatrix alloc] initWithTilesMatrix: tileConfiguration
-                                               andVisibleFrame: [[NSScreen mainScreen] visibleFrame]];
+        _tileMatrix = [[SKTileMatrix alloc] initWithRows:2 andColumns:2];
     }
     return self;
 }
