@@ -10,51 +10,37 @@
     int numberOfRows;
     int numberOfColumns;
     // one tile height
-    int tileHeight;
+    CGFloat tileHeight;
     // one tile width
-    int tileWidth;
+    CGFloat tileWidth;
     // array of CGRect tiles
-    NSArray* tiles;
+    NSMutableArray* tiles;
 }
 
-- (id)initWithTilesMatrix:(int [])matrix andVisibleFrame:(CGRect)frame {
+- (id) initWithTilesMatrix:(int [])matrix andVisibleFrame:(CGRect)frame {
     self = [super init];
     if ( self ) {
         numberOfRows = matrix[0];
         numberOfColumns = matrix[1];
-        tileWidth = [[NSScreen mainScreen] visibleFrame].size.width / numberOfColumns;
-        tileHeight = [[NSScreen mainScreen] visibleFrame].size.height / numberOfRows;
+        tileWidth = [[NSScreen mainScreen] visibleFrame].size.width / numberOfColumns; // 840
+        tileHeight = [[NSScreen mainScreen] visibleFrame].size.height / numberOfRows; // 512
+        tiles = [[NSMutableArray alloc] init];
         [self buildTilesFromMatrix];
     }
+    //[tiles addObject:@"s"];
+    //[tiles addObject:@"b"];
+    NSLog(@"%@", tiles);
     return self;
 }
 
-- (void)buildTilesFromMatrix {
-//    NSLog(@"%i", tileWidth);
-
-    // for each row, create a column
+/**
+* Builds the tiles matrix and adds every item to the tiles array
+*/
+- (void) buildTilesFromMatrix {
     for(int i = 0; i < numberOfRows; i++) {
         for(int j = 0; j < numberOfColumns; j++) {
-//            NSLog(@"x %i", tileWidth * y);
-//            NSLog(@"y %i", tileHeight * (i+1));
-
-            int x = i == 0 ? 0 : i;
-            int y = j == 0 ? 0 : j;
-
-            CGRect tile = CGRectMake(tileWidth * x, tileHeight * (i+1), tileWidth, tileHeight);
-            NSLog(@"%d, %d", tile.origin.x, tile.origin.y);
-
-
-//            CGPoint tileOrigin = CGPointMake(tileWidth * i, tileHeight * (y+1));
-//            NSLog(@"%d, %d", tileOrigin.x, tileOrigin.y);
-//            CGPoint tileOrigin = CGPointMake(tileHeight * (i+1), tileWidth * y);
-//            NSLog(@"%i, %i", tileOrigin.x, tileOrigin.y);
-//            NSLog(@"%i, %i", i, y);
-//            int tilePoint = (i == 0) ? tileHeight : tileHeight * i+1;
-//            NSLog(@"%d", tileHeight * i+1);
-//            NSLog(@"%d", tileHeight * (i+1));
-//            NSLog(@"%d", tilePoint);
-//            CGRect tile = CGRectMake(tileHeight * i+1, <#(CGFloat)y#>, <#(CGFloat)width#>, <#(CGFloat)height#>)
+            CGRect tile = CGRectMake(tileWidth * j, tileHeight * (i+1), tileWidth, tileHeight);
+            [tiles addObject:[NSValue valueWithRect:tile]];
         }
     }
 }
