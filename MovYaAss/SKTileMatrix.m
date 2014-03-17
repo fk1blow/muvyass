@@ -9,11 +9,8 @@
 @implementation SKTileMatrix {
     int numberOfRows;
     int numberOfColumns;
-    // one tile height
     CGFloat tileHeight;
-    // one tile width
     CGFloat tileWidth;
-    // array of CGRect tiles
     NSMutableArray* tiles;
 }
 
@@ -32,18 +29,15 @@
         tileWidth = frame.size.width / numberOfColumns; // 840
         tileHeight = frame.size.height / numberOfRows; // 512
         tiles = [[NSMutableArray alloc] init];
-        [self buildTilesFromMatrix];
+        [self buildTiles];
     }
-    //[tiles addObject:@"s"];
-    //[tiles addObject:@"b"];
-    NSLog(@"%@", tiles);
     return self;
 }
 
 /**
 * Builds the tiles matrix and adds every item to the tiles array
 */
-- (void) buildTilesFromMatrix {
+- (void) buildTiles {
     for(int i = 0; i < numberOfRows; i++) {
         for(int j = 0; j < numberOfColumns; j++) {
             CGRect tile = CGRectMake(tileWidth * j, tileHeight * (i+1), tileWidth, tileHeight);
