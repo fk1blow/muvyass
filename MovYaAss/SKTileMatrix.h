@@ -13,10 +13,9 @@
 // the invisible frame for the tiles wrapper rect
 @property (nonatomic, assign) CGRect wrapperFrame;
 
-// provide a matrix for the tile and a frame for the wrapper
-- (id) initWithTilesMatrix:(int [])matrix andVisibleFrame:(CGRect)frame;
 
-// provide a more simpler initializer
 - (id) initWithRows:(int)rows andColumns:(int)columns;
+
+- (id) initWithTilesMatrix:(int [])matrix andVisibleFrame:(CGRect)frame;
 
 @end

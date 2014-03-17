@@ -17,13 +17,20 @@
     NSMutableArray* tiles;
 }
 
+- (id)initWithRows:(int)rows andColumns:(int)columns {
+    int matrix [] = {rows, columns};
+    CGRect frame = [[NSScreen mainScreen] visibleFrame];
+    self = [self initWithTilesMatrix:matrix andVisibleFrame:frame];
+    return self;
+}
+
 - (id) initWithTilesMatrix:(int [])matrix andVisibleFrame:(CGRect)frame {
     self = [super init];
     if ( self ) {
         numberOfRows = matrix[0];
         numberOfColumns = matrix[1];
-        tileWidth = [[NSScreen mainScreen] visibleFrame].size.width / numberOfColumns; // 840
-        tileHeight = [[NSScreen mainScreen] visibleFrame].size.height / numberOfRows; // 512
+        tileWidth = frame.size.width / numberOfColumns; // 840
+        tileHeight = frame.size.height / numberOfRows; // 512
         tiles = [[NSMutableArray alloc] init];
         [self buildTilesFromMatrix];
     }
