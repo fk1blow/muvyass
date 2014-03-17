@@ -21,13 +21,6 @@
 {
     /** Initialize tiles controller */
 
-
-    /*
-    //initialize tile matrix
-    SKTileMatrix *tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:configurationMatrix
-                                                        andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];*/
-
-    int configurationMatrix [2] = {2, 2};
     SKTileMatrixController *tileCtrl = [[SKTileMatrixController alloc] init];
 
     /** Initialize input */

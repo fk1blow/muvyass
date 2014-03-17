@@ -14,6 +14,6 @@
 @property (nonatomic, assign) CGRect wrapperFrame;
 
 // provide a matrix for the tile and a frame for the wrapper
-- (id) initWithTileMatrix:(NSArray *)matrix andVisibleFrame:(CGRect)frame;
+- (id) initWithTilesMatrix:(int [])matrix andVisibleFrame:(CGRect)frame;
 
 @end

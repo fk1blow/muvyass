@@ -18,8 +18,9 @@
 - (id) init {
     self = [super init];
     if (self) {
-        _tileMatrix = [[SKTileMatrix alloc] initWithTileMatrix:@[@2, @4]
-                                               andVisibleFrame:[[NSScreen mainScreen] visibleFrame]];
+        int tileConfiguration[2] = {2, 2};
+        _tileMatrix = [[SKTileMatrix alloc] initWithTilesMatrix: tileConfiguration
+                                               andVisibleFrame: [[NSScreen mainScreen] visibleFrame]];
     }
     return self;
 }

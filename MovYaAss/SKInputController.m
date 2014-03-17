@@ -4,12 +4,11 @@
 //
 
 #import "SKInputController.h"
-#import "SKMappings.h"
 
 #pragma mark Extension
 
 @interface SKInputController()
-    @property (strong) SKMappings *mappingController;
+    @property (strong) SKMappings *inputMapper;
 @end
 
 #pragma mark Implementation
@@ -22,8 +21,8 @@
     self = [super init];
     if (self) {
         [self addKeyboardMonitor];
-        _mappingController = [[SKMappings alloc] init];
-        [_mappingController setDelegate:self];
+        _inputMapper = [[SKMappings alloc] init];
+        [_inputMapper setDelegate:self];
     }
     return self;
 }
@@ -35,7 +34,6 @@
 }
 
 #pragma mark Private
-
 
 /*
     Monitors "keydown" event and intercepts the event trying
@@ -57,12 +55,12 @@
             // ...and process input only if modifier flags are added, that is
             // only when the key is pressed and not after, as it seems to behaves atm
             if (hasModifiers)
-                [self.mappingController mapCommandFor:event];
+                [self.inputMapper mapCommandFor:event];
             else
-                [self.mappingController unmapCommandFor:event];
+                [self.inputMapper unmapCommandFor:event];
         } else {
             if (![event isARepeat]) {
-                [self.mappingController mapCommandFor:event];
+                [self.inputMapper mapCommandFor:event];
             }
         }
         // Return the event, a new event, or, to stop
@@ -71,7 +69,7 @@
     };
 
     keyUpHandler = ^NSEvent * (NSEvent * event) {
-        [self.mappingController unmapCommandFor:event];
+        [self.inputMapper unmapCommandFor:event];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
         return event;
