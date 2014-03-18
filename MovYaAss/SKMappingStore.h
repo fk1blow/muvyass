@@ -7,12 +7,6 @@
 
 @interface SKMappingStore : NSObject
 
-/*
-equivalent to:
-    -(void)setDelegate:(id <SKMappingStoreDelegate>)delegate;
-    -(id<SKMappingStoreDelegate>)delegate;
-*/
-
 @property (nonatomic, strong) NSDictionary *keyboardMappings;
 
 -(NSDictionary *)recognizeMappings:(NSSet *)mappings;
