@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SKMappings.h"
+#import "SKMapper.h"
 
 
 @interface SKInputController : NSObject<SKMappingsDelegate>
