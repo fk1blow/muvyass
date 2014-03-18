@@ -5,15 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-
-/*@class SKMappingStore;
-@protocol SKMappingStoreDelegate <NSObject>
-
--(void)didRecognizedMappings:(NSSet *)mappings forKey:(NSString *)key;
-
-@end*/
-
-
 @interface SKMappingStore : NSObject
 
 /*
@@ -21,7 +12,7 @@ equivalent to:
     -(void)setDelegate:(id <SKMappingStoreDelegate>)delegate;
     -(id<SKMappingStoreDelegate>)delegate;
 */
-//@property (nonatomic, weak) id <SKMappingStoreDelegate>delegate;
+
 @property (nonatomic, strong) NSDictionary *keyboardMappings;
 
 -(NSDictionary *)recognizeMappings:(NSSet *)mappings;
