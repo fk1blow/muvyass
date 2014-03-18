@@ -28,11 +28,8 @@
     NSDictionary *result;
     for(id key in self.keyboardMappings) {
         NSSet *item = self.keyboardMappings[key];
-       if ([input isEqualToSet:item]) {
+       if ([input isEqualToSet:item])
            result = [NSDictionary dictionaryWithObject:item forKey:key];
-           //if ([self.delegate respondsToSelector:@selector(didRecognizedMappings:forKey:)])
-           //    [self.delegate didRecognizedMappings:item forKey:key];
-       }
     }
     return result;
 }
