@@ -17,13 +17,12 @@
 #pragma mark Initializers
 
 - (id)initWithRows:(int)rows columns:(int)columns {
-    int matrix [] = {rows, columns};
     CGRect frame = [[NSScreen mainScreen] visibleFrame];
-    self = [self initWithTilesMatrix:matrix visibleFrame:frame];
+    self = [self initWithRows:rows columns:columns  visibleFrame:frame];
     return self;
 }
 
-- (id) initWithTilesMatrix:(int [])matrix visibleFrame:(CGRect)frame {
+- (id) initWithRows:(int)rows columns:(int)columns visibleFrame:(CGRect)frame {
     self = [super init];
     if ( self ) {
         numberOfRows = matrix[0];

@@ -12,6 +12,6 @@
 @property (nonatomic, assign) CGRect wrapperFrame;
 
 - (id) initWithRows:(int)rows columns:(int)columns;
-- (id) initWithTilesMatrix:(int [])matrix visibleFrame:(CGRect)frame;
+- (id) initWithRows:(int)rows columns:(int)columns visibleFrame:(CGRect)frame;
 
 @end
