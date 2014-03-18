@@ -4,12 +4,12 @@
 //
 
 #import "SKInputController.h"
-#import "SKTileMapper.h"
+#import "SKCommandMapper.h"
 
 #pragma mark Extension
 
 @interface SKInputController()
-    @property (strong) SKTileMapper *mapper;
+    @property (strong) SKCommandMapper *commandMapper;
 @end
 
 #pragma mark Implementation
@@ -22,15 +22,15 @@
     self = [super init];
     if (self) {
         [self addKeyboardMonitor];
-        _mapper = [[SKTileMapper alloc] init];
-        [_mapper setDelegate:self];
+        _commandMapper = [[SKCommandMapper alloc] init];
+        [_commandMapper setDelegate:self];
     }
     return self;
 }
 
 #pragma mark Delegates
 
--(void) mapper:(SKTileMapper *)mapper didRecognizedCommand:(NSDictionary *)command {
+-(void) commandMapper:(SKCommandMapper *)mapper didRecognizedCommand:(NSDictionary *)command {
     NSLog(@"recognized command %@", command);
 }
 
@@ -56,12 +56,12 @@
             // ...and process input only if modifier flags are added, that is
             // only when the key is pressed and not after, as it seems to behaves atm
             if (hasModifiers)
-                [self.mapper mapCommandFor:event];
+                [self.commandMapper mapCommandFor:event];
             else
-                [self.mapper unmapCommandFor:event];
+                [self.commandMapper unmapCommandFor:event];
         } else {
             if (![event isARepeat]) {
-                [self.mapper mapCommandFor:event];
+                [self.commandMapper mapCommandFor:event];
             }
         }
         // Return the event, a new event, or, to stop
@@ -70,7 +70,7 @@
     };
 
     keyUpHandler = ^NSEvent * (NSEvent * event) {
-        [self.mapper unmapCommandFor:event];
+        [self.commandMapper unmapCommandFor:event];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
         return event;

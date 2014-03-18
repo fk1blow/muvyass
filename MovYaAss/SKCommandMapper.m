@@ -3,12 +3,12 @@
 // Copyright (c) 2014 Dragos Tudorache. All rights reserved.
 //
 
-#import "SKTileMapper.h"
+#import "SKCommandMapper.h"
 #import "SKMappingStore.h"
 
 #pragma mark Extension
 
-@interface SKTileMapper ()
+@interface SKCommandMapper ()
     /*
         Holds a reference to all the currently active input items
         In the case of the keyboard, this contains an list of all
@@ -27,7 +27,7 @@
 
 #pragma mark Implementation
 
-@implementation SKTileMapper
+@implementation SKCommandMapper
 
 -(id) init {
     self = [super init];
@@ -44,7 +44,7 @@
     NSDictionary *recognized = [self.mappingStore recognizeMappings:self.currentInput];
     if (recognized) {
         if ([self.delegate respondsToSelector:@selector(mapper:didRecognizedCommand:)])
-            [self.delegate mapper:self didRecognizedCommand:recognized];
+            [self.delegate commandMapper:self didRecognizedCommand:recognized];
     }
 }
 
