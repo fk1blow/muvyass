@@ -4,12 +4,12 @@
 //
 
 #import "SKInputController.h"
-#import "SKMapper.h"
+#import "SKTileMapper.h"
 
 #pragma mark Extension
 
 @interface SKInputController()
-    @property (strong) SKMapper *mapper;
+    @property (strong) SKTileMapper *mapper;
 @end
 
 #pragma mark Implementation
@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
         [self addKeyboardMonitor];
-        _mapper = [[SKMapper alloc] init];
+        _mapper = [[SKTileMapper alloc] init];
         [_mapper setDelegate:self];
     }
     return self;
@@ -30,7 +30,7 @@
 
 #pragma mark Delegates
 
--(void) mapper:(SKMapper *)mapper didRecognizedCommand:(NSDictionary *)command {
+-(void) mapper:(SKTileMapper *)mapper didRecognizedCommand:(NSDictionary *)command {
     NSLog(@"recognized command %@", command);
 }
 

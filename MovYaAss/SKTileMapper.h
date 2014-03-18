@@ -5,10 +5,10 @@
 
 #import <Foundation/Foundation.h>
 
-@class SKMapper;
+@class SKTileMapper;
 @protocol SKMappingsDelegate<NSObject>
 
--(void)mapper:(SKMapper *)mapper didRecognizedCommand:(NSDictionary *)command;
+-(void)mapper:(SKTileMapper *)mapper didRecognizedCommand:(NSDictionary *)command;
 
 @end
 
@@ -21,7 +21,7 @@
 // - it finishes when a key is released because, because that
 // should mark the beginning of a new input mapping sequence
 //
-@interface SKMapper : NSObject {
+@interface SKTileMapper : NSObject {
 }
 
 /*

@@ -3,12 +3,12 @@
 // Copyright (c) 2014 Dragos Tudorache. All rights reserved.
 //
 
-#import "SKMapper.h"
+#import "SKTileMapper.h"
 #import "SKMappingStore.h"
 
 #pragma mark Extension
 
-@interface SKMapper ()
+@interface SKTileMapper ()
     /*
         Holds a reference to all the currently active input items
         In the case of the keyboard, this contains an list of all
@@ -27,7 +27,7 @@
 
 #pragma mark Implementation
 
-@implementation SKMapper
+@implementation SKTileMapper
 
 -(id) init {
     self = [super init];
