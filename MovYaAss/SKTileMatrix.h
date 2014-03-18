@@ -6,9 +6,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface SKTileMatrix : NSObject {
-    CGRect _wrapperFrame;
-}
+@interface SKTileMatrix : NSObject
 
 // the invisible frame for the tiles wrapper rect
 @property (nonatomic, assign) CGRect wrapperFrame;
