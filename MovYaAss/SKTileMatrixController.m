@@ -18,7 +18,7 @@
 - (id) init {
     self = [super init];
     if (self) {
-        _tileMatrix = [[SKTileMatrix alloc] initWithRows:2 andColumns:2];
+        _tileMatrix = [[SKTileMatrix alloc] initWithRows:2 columns:2];
     }
     return self;
 }
