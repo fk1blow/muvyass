@@ -8,7 +8,7 @@
 #pragma mark Extension
 
 @interface SKInputController()
-    @property (strong) SKMappings *inputMapper;
+    @property (strong) SKMappings *mapper;
 @end
 
 #pragma mark Implementation
@@ -21,8 +21,8 @@
     self = [super init];
     if (self) {
         [self addKeyboardMonitor];
-        _inputMapper = [[SKMappings alloc] init];
-        [_inputMapper setDelegate:self];
+        _mapper = [[SKMappings alloc] init];
+        [_mapper setDelegate:self];
     }
     return self;
 }
@@ -55,12 +55,12 @@
             // ...and process input only if modifier flags are added, that is
             // only when the key is pressed and not after, as it seems to behaves atm
             if (hasModifiers)
-                [self.inputMapper mapCommandFor:event];
+                [self.mapper mapCommandFor:event];
             else
-                [self.inputMapper unmapCommandFor:event];
+                [self.mapper unmapCommandFor:event];
         } else {
             if (![event isARepeat]) {
-                [self.inputMapper mapCommandFor:event];
+                [self.mapper mapCommandFor:event];
             }
         }
         // Return the event, a new event, or, to stop
@@ -69,7 +69,7 @@
     };
 
     keyUpHandler = ^NSEvent * (NSEvent * event) {
-        [self.inputMapper unmapCommandFor:event];
+        [self.mapper unmapCommandFor:event];
         // Return the event, a new event, or, to stop
         // the event from being dispatched, nil
         return event;
