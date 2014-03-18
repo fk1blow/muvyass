@@ -43,7 +43,7 @@
     [self.currentInput addObject:keyCode];
     NSDictionary *recognized = [self.mappingStore recognizeMappings:self.currentInput];
     if (recognized) {
-        if ([self.delegate respondsToSelector:@selector(mapper:didRecognizedCommand:)])
+        if ([self.delegate respondsToSelector:@selector(commandMapper:didRecognizedCommand:)])
             [self.delegate commandMapper:self didRecognizedCommand:recognized];
     }
 }
