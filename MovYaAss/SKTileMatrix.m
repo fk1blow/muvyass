@@ -25,10 +25,10 @@
 - (id) initWithRows:(int)rows columns:(int)columns visibleFrame:(CGRect)frame {
     self = [super init];
     if ( self ) {
-        numberOfRows = matrix[0];
-        numberOfColumns = matrix[1];
-        tileWidth = frame.size.width / numberOfColumns; // 840
-        tileHeight = frame.size.height / numberOfRows; // 512
+        numberOfRows = rows;
+        numberOfColumns = columns;
+        tileWidth = frame.size.width / rows; // 840
+        tileHeight = frame.size.height / columns; // 512
         tiles = [[NSMutableArray alloc] init];
         [self buildTilesMatrix];
     }
@@ -36,6 +36,10 @@
 }
 
 #pragma mark Implementation
+
+- (void)testTileRecognition {
+    NSLog(@"%@", NSWindow windo);
+}
 
 /**
 * Builds the tiles matrix and adds every item to the tiles array
