@@ -27,6 +27,8 @@
 
     // should manage the user keyboard input
     SKInputController *inputController = [[SKInputController alloc] init];
+
+
 }
 
 
