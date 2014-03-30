@@ -23,4 +23,10 @@
     return self;
 }
 
+#pragma mark Testing
+
+-(void)testTileDetectionOnFrame:(NSRect)frame {
+    [self.tileMatrix testFindTileForRect:frame];
+}
+
 @end

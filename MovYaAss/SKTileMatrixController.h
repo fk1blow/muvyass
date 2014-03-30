@@ -12,4 +12,6 @@
 //- (id) initWithTileMatrix:(SKTileMatrix *)tileMatrix;
 //- (id) initWithArrayOfTiles:(int [2])tiles;
 
+-(void)testTileDetectionOnFrame:(NSRect)frame;
+
 @end
