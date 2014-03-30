@@ -11,7 +11,12 @@
 // the invisible frame for the tiles wrapper rect
 @property (nonatomic, assign) CGRect wrapperFrame;
 
+// initializers
 - (id) initWithRows:(int)rows columns:(int)columns;
 - (id) initWithRows:(int)rows columns:(int)columns visibleFrame:(CGRect)frame;
+
+// public interface
+//- (id) getTileAtPoint:(CGPoint)point;
+- (void)testFindTileForRect:(NSRect)frame;
 
 @end
