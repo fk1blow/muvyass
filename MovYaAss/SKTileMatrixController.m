@@ -19,6 +19,7 @@
     self = [super init];
     if (self) {
         _tileMatrix = [[SKTileMatrix alloc] initWithRows:2 columns:2];
+        [_tileMatrix testTileRecognition];
     }
     return self;
 }
