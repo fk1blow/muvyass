@@ -39,19 +39,28 @@
 
 #pragma mark Test
 
+/*
+    Test to see if a tile's point is contained within a specific tile
+    It also checks if the thingToTest should be included in that specific tile or
+    if it needs to move to the next upper upper tile.
+ 
+    The best way to determine is to build a detection test for both x and y axes
+ */
 - (void)testFindTileForRect:(NSRect)rectToTest {
     int i, j, counter = 0;
+    
+    CGPoint pointToTest = rectToTest.origin;
+    CGFloat thingsHalf = rectToTest.size.height / 2;
+    
     for(i = 0; i < numberOfRows; i++) {
         for(j = 0; j < numberOfColumns; j++, counter++) {
             NSRect container = [tiles[counter] rectValue];
-            CGPoint pointToTest = rectToTest.origin;
             
             // test to see if the thing to test(a window, usually) point is inside one of the tiles
             if (CGRectContainsPoint(container, pointToTest)) {
                 // check if the distance between the point and the containers upper margin
                 // is more then a half of the thing to test's height
                 CGFloat distanceTilUpperMargin = (container.origin.y + tileHeight) - pointToTest.y;
-                CGFloat thingsHalf = rectToTest.size.height / 2;
                 
                 // if it is, this is the tile we want, and should "break"
                 if (distanceTilUpperMargin > thingsHalf) {
