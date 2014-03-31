@@ -47,7 +47,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
             endingLineNumber = "80"
-            landmarkName = "-buildTilesMatrix"
+            landmarkName = "-testFindTileForRect:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
